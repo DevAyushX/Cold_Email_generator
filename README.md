@@ -1,10 +1,12 @@
-# 📧 Cold Mail Generator
-Cold email generator for services company using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions. 
+#Cold Mail Generator
+This tool helps service-based companies generate personalized cold emails using Groq, Langchain, and Streamlit. Users can input the careers page URL of a target company, and the tool will automatically extract job openings. Based on each job description, it crafts customized cold emails and attaches relevant portfolio links retrieved from a vector database. 
 
-**Imagine a scenario:**
+**Use Case Scenario::**
 
-- Nike needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
-- Atliq is Software Development company can provide a dedicated software development engineer to Nike. So, the business development executive (Mohan) from Atliq is going to reach out to Nike via a cold email.
+- Suppose Nike is looking to hire a Principal Software Engineer. The company will invest considerable time and resources in recruiting, onboarding, and training.
+- Atliq, a software development firm, can offer a skilled engineer on a dedicated basis to fulfill this need.
+- Mohan, a business development executive at Atliq, plans to reach out to Nike through a cold email to propose this solution
+
 
 ![img.png](imgs/img.png)
 
@@ -12,15 +14,19 @@ Cold email generator for services company using groq, langchain and streamlit. I
 ![img.png](imgs/architecture.png)
 
 ## Set-up
-1. To get started we first need to get an API_KEY from here: https://console.groq.com/keys. Inside `app/.env` update the value of `GROQ_API_KEY` with the API_KEY you created. 
+1. First, obtain an API key from: https://console.groq.com/keys.
+Then, open app/.env and update the GROQ_API_KEY field with your generated API key. 
 
 
-2. To get started, first install the dependencies using:
+2. Install the required dependencies by running:
+
     ```commandline
      pip install -r requirements.txt
     ```
    
-3. Run the streamlit app:
+3. Launch the Streamlit application with:
+
+
    ```commandline
    streamlit run app/main.py
    ```
