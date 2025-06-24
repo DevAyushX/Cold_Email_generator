@@ -8,10 +8,6 @@ This tool helps service-based companies generate personalized cold emails using 
 - Mohan, a business development executive at Atliq, plans to reach out to Nike through a cold email to propose this solution
 
 
-![img.png](imgs/img.png)
-
-## Architecture Diagram
-![img.png](imgs/architecture.png)
 
 ## Set-up
 1. First, obtain an API key from: https://console.groq.com/keys.
